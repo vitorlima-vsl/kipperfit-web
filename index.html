@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>KipperFit Personal — O app do personal moderno</title>
+  <meta name="description" content="Gerencie alunos, treinos, avaliações e progresso em um só app. KipperFit Personal — a plataforma completa para personal trainers." />
+
+  <!-- Open Graph / social preview -->
+  <meta property="og:title" content="KipperFit Personal — O app do personal moderno" />
+  <meta property="og:description" content="Alunos, treinos, avaliações, progresso e desafios — toda a gestão do seu trabalho em um só app." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/logo.png" />
+  <meta name="theme-color" content="#081095" />
+
+  <link rel="icon" type="image/png" href="assets/logo.png" />
+
+  <!-- Spline Sans (the app's display font) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Spline+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="lp-root">
+    <div class="lp-shell">
+      <!-- NAV -->
+      <nav class="lp-nav">
+        <div class="lp-brand">
+          <img src="assets/logo.png" alt="KipperFit Personal" />
+          KIPPERFIT<span class="thin">PERSONAL</span>
+        </div>
+        <ul class="lp-nav-links">
+          <li><a href="#features">RECURSOS</a></li>
+          <li><a href="#cases">O APP</a></li>
+          <li><a href="#progress">RESULTADOS</a></li>
+          <li><a href="#download">BAIXAR</a></li>
+        </ul>
+        <a class="lp-nav-cta" href="#download">Começar agora</a>
+        <button class="lp-burger" id="burger" aria-label="Abrir menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </nav>
+
+      <!-- MOBILE MENU -->
+      <div class="lp-mobile-menu" id="mobileMenu">
+        <a href="#features">RECURSOS</a>
+        <a href="#cases">O APP</a>
+        <a href="#progress">RESULTADOS</a>
+        <a href="#download">BAIXAR</a>
+        <a class="lp-mobile-menu-cta" href="#download">Começar agora</a>
+      </div>
+
+      <div class="lp-panel">
+        <!-- HERO -->
+        <section class="lp-section lp-hero">
+          <div class="lp-hero-left">
+            <span class="lp-dots hero"></span>
+            <span class="lp-eyebrow"><span class="dot"></span> PARA PERSONAL TRAINERS</span>
+            <h1 class="lp-h1" id="heroHeadline"></h1>
+            <p class="lp-sub lp-fade">
+              Alunos, treinos, avaliações, progresso e desafios — toda a gestão
+              do seu trabalho em um só app, na palma da mão.
+            </p>
+            <ul class="lp-hero-points lp-fade d1" id="heroPoints"></ul>
+            <div class="lp-stores lp-fade d1" id="download"></div>
+            <div class="lp-trust lp-fade d2">
+              <div class="lp-trust-stat"><b>+10 mil</b><span>alunos gerenciados</span></div>
+              <div class="lp-trust-divider"></div>
+              <div class="lp-trust-stat"><b>4.9★</b><span>avaliação média</span></div>
+              <div class="lp-trust-divider"></div>
+              <div class="lp-trust-stat"><b>100%</b><span>na palma da mão</span></div>
+            </div>
+          </div>
+          <div class="lp-hero-right lp-fade d1">
+            <div class="lp-stage" id="phoneStage"></div>
+          </div>
+        </section>
+
+        <!-- FEATURES -->
+        <section class="lp-section lp-feat" id="features">
+          <div class="lp-section-head lp-fade">
+            <span class="kicker">Recursos</span>
+            <h2>Feito para o personal moderno</h2>
+            <p>Cada detalhe pensado para você economizar tempo e impressionar seus alunos. Menos planilhas soltas, mais resultado.</p>
+            <a class="lp-pill-btn" href="#download">Explorar o app <span data-icon="arrow"></span></a>
+          </div>
+          <div class="lp-feat-list" id="featList"></div>
+        </section>
+      </div>
+
+      <!-- CASES — pinned horizontal scroll -->
+      <section class="lp-cases" id="cases">
+        <div class="lp-cases-track-wrap" id="casesWrap">
+          <div class="lp-cases-sticky" id="casesSticky">
+            <div class="lp-cases-head">
+              <img class="mark" src="assets/logo.png" alt="" />
+              <div>
+                <h2>Tudo em um só app</h2>
+                <span class="sub">O fluxo completo do personal moderno</span>
+              </div>
+            </div>
+            <div class="lp-cases-row" id="casesRow"></div>
+            <div class="lp-cases-hint">ROLE PARA EXPLORAR <span data-icon="arrow"></span></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA + FOOTER -->
+      <div class="lp-panel" id="progress" style="margin-top:14px">
+        <section class="lp-section lp-cta">
+          <div class="lp-fade">
+            <span class="lp-eyebrow" style="margin-bottom:18px"><span data-icon="target"></span> COMECE HOJE</span>
+          </div>
+          <h2 class="lp-fade d1">Pronto para elevar o nível?</h2>
+          <p class="lp-fade d2">Baixe o KipperFit Personal e leve a gestão dos seus alunos para outro patamar. Grátis para começar.</p>
+          <div class="lp-stores lp-cta-stores lp-fade d3" data-stores></div>
+        </section>
+
+        <footer class="lp-footer">
+          <div class="lp-footer-top">
+            <div class="lp-footer-brand">
+              <img src="assets/logo.png" alt="KipperFit Personal" />
+              KIPPERFIT<span class="thin">PERSONAL</span>
+            </div>
+            <nav class="lp-footer-links">
+              <a href="#features">RECURSOS</a>
+              <a href="#cases">O APP</a>
+              <a href="#progress">RESULTADOS</a>
+              <a href="#download">BAIXAR</a>
+            </nav>
+          </div>
+          <div class="lp-footer-bottom">
+            <span id="copyright">© KipperFit Personal. Todos os direitos reservados.</span>
+            <div class="lp-stores" data-stores></div>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
