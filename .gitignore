@@ -1,0 +1,4 @@
+# OS / editor cruft — keep the Pages deploy clean
+.DS_Store
+Thumbs.db
+*.log
